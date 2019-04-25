@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Learning Javascript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />.
+
+    <title>Draggable/Resizables</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <style>
+
+
+
+        #fantasma {
+            width:1400px;
+            height:1000px;
+            image-align:center;
+            margin:0;
+        }
+
+
+        #text {
+            text-align: center;
+            height:400px;
+            font-size:3em;
+            background-color: gold;
+        }
+
+        #findit {
+            text-align:center;
+            height:100px;
+            font-size:2em;
+
+            background-color:darkgoldenrod;
+        }
+
+    </style>
+</head>
+<body style="background-color:black">
+
+
+<div id="text">
+    <p>Finding order in chaos: The first image you have received is hiding in the image below  </p>
+
+    <div>
+
+        &#8595 &nbsp &#8595 &nbsp &#8595 &nbsp &#8595 &nbsp  &#8595 &nbsp &#8595 &nbsp &#8595
+        &nbsp &#8595 &nbsp &#8595 &nbsp &#8595 &nbsp &#8595 &nbsp &#8595 &nbsp  &#8595 &nbsp
+        &#8595 &#8595 &nbsp &#8595 &nbsp &#8595 &nbsp &#8595 &nbsp &nbsp &nbsp &#8595 &nbsp
+        &#8595 &nbsp &#8595 &nbsp &#8595 &nbsp  &#8595 &nbsp &#8595 &nbsp &#8595 &nbsp &#8595
+        &nbsp &#8595 &nbsp &#8595
+
+
+
+    </div>
+
+    <div id="findit" align="middle">
+        <p>Find it!</p>
+    </div>
+</div>
+
+<div id="fantasma">
+    <img align="middle" class="ui-widget-content" id="fantasma"
+         src="file:///C:/Users/Armina/Desktop/images/fantasma.jpg"/>
+</div>
+
+<script>
+
+
+
+    $(function(){
+        $( "#fantasma" ).draggable().resizable();
+           animate:true;
+    });
+    $( function() {
+        $( "#fantasma" ).resizable();
+        animate:true;
+        });
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

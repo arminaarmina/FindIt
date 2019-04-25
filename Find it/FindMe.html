@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Me</title>
+
+    <title>jQuery UI Draggable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <style>
+        #findMe{
+            margin:auto;
+            height:100px;
+            width:100px;
+            font-family:"Calibri Light";
+            font-size:2em;
+            background-color:yellow;
+            text-align:center;
+        }
+        #3chinamen{
+            border-color:yellow;
+
+        }
+
+    </style>
+</head>
+<body style="background-color:black">
+<div id="findMe">
+    <p><a href="drag.html">Find Me</a></p>
+</div>
+<div id="3chinamen">
+    <img class="ui-widget-content" id="3chinamen"
+         src="file:///C:/Users/Armina/Desktop/images/3chinamen.png"/>
+</div>
+
+<script>
+
+    $( function() {
+        $( "#3chinamen" ).resizable();
+
+    });
+</script>
+
+
+</body>
+</html>
